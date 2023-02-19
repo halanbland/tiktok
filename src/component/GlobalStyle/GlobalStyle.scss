@@ -3,13 +3,14 @@
 
 :root {
     --primary: #fc2b55;
+    --black: #000;
+    --text-color: #333;
+    --white: #fff;
 
     // Default layout
     --default-layout-header-height: 60px;
     --default-layout-widht: 1150px;
-    --black: #000;
-    --text-color: #333;
-    --white: #fff;
+    --default-layout-horizontal-spacer: 24px;
 }
 
 * {
