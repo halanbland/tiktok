@@ -27,6 +27,7 @@ import images from '../../../../assets/image';
 import AccountItem from '../../../AccountItem';
 import Button from '../../../Button';
 import Menu from '../../../Popper/Menu';
+import Image from '../../../Image';
 
 const cx = classNames.bind(styles);
 
@@ -156,7 +157,8 @@ function Header() {
                     )}
                     <Menu items={currentUser ? userMenu : MENU_ITEM} onChange={handleMenuChange}>
                         {currentUser ? (
-                            <img
+                            <Image
+                                fallback="https://fullstack.edu.vn/static/media/f8-icon.18cd71cfcfa33566a22b.png"
                                 className={cx('user-avatar')}
                                 src="https://p16-sign-va.tiktokcdn.com/musically-maliva-obj/1653272836951046~c5_100x100.jpeg?x-expires=1677034800&x-signature=yIYbflQZiIAxCbrEBA5EqVarK%2BI%3D"
                                 alt="name"
